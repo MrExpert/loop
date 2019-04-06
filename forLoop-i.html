@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Loops</h2>
+
+<p id="demo"></p>
+
+<script>
+var cars = [
+["BMW", "black", "brown"],
+["Volvo", "white", "green"], 
+["Saab", "red"], 
+["Ford", "blue"], 
+["Fiat","yellow"], 
+["Audi", "grey"]
+];
+var text = "";
+
+for (var i = 0; i < cars.length; i++) {
+    // [i] - is each array of big [cars: all 6 arrays] 
+    // [0] - is 1st element of  [each individual array: "BMW", "Volvo" ... ] 
+  text += cars[i][0] + "<br>";  
+}
+document.write(text);
+</script>
+
+</body>
+</html>
